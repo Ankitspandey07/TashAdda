@@ -121,6 +121,12 @@ See [releases/README.md](releases/README.md) for the full version log.
 
 - [tashadda-vercel](https://github.com/Ankitspandey07/tashadda-vercel) — online relay server
 
+## Amazon Appstore
+
+See **[store/AMAZON_APPSTORE.md](store/AMAZON_APPSTORE.md)** for the full checklist, signed APK steps, icon, and listing text.
+
+**Important:** APKs built without a release keystore are debug-signed and are **not** valid for Amazon upload. Create `android/key.properties` + keystore first, then `flutter build apk --release`.
+
 ## License
 
 Private project — all rights reserved unless otherwise noted.

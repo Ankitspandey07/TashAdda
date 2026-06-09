@@ -6,7 +6,7 @@ Versioned Android APKs for TashAdda. Download the latest from [GitHub Releases](
 
 | Version | Date | APK | Notes |
 |---------|------|-----|-------|
-| **1.0.0** | 2026-06-09 | [TashAdda-v1.0.0.apk](TashAdda-v1.0.0.apk) | Initial release — vs bots, LAN rooms, online rooms, chip limits, session scoreboard, Bluff, AdMob |
+| **1.0.0** | 2026-06-09 | [TashAdda-v1.0.0.apk](TashAdda-v1.0.0.apk) | Signed release build — vs bots, LAN, online, chip limits, Bluff, AdMob. Amazon Appstore ready. |
 
 `TashAdda.apk` in this folder always matches the **latest** published version (currently v1.0.0).
 

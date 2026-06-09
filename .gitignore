@@ -47,3 +47,9 @@ app.*.map.json
 
 # Local device screenshots from QA
 device_screenshot*.png
+
+# Release signing — never commit these
+android/key.properties
+*.jks
+*.keystore
+android/KEYSTORE_CREDENTIALS.local.txt
