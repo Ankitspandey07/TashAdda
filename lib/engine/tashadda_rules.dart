@@ -1,4 +1,4 @@
-/// TashAdda Teen Patti rules — shown in-app for players.
+/// TashAdda table rules — shown in-app for players.
 const List<String> kTashaddaRules = [
   'Starting chips: 1000 (online/LAN default). Boot is posted each round.',
   'Blind chaal: max 8 chaals per round. Seen players pay double until the 8th chaal.',

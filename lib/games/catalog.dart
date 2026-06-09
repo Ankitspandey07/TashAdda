@@ -35,14 +35,14 @@ class GameEntry {
 /// reuse the same table; others are placeholders kept honest as "coming soon".
 const List<GameEntry> kGameCatalog = [
   GameEntry(
-    title: 'Teen Patti',
+    title: 'Classic',
     description: 'Classic 3-card game · Trail beats everything',
     icon: Icons.style,
     game: TeenPattiGame(),
   ),
   GameEntry(
     title: 'Muflis',
-    description: 'Lowball Teen Patti · the weakest hand wins',
+    description: 'Lowball · the weakest hand wins',
     icon: Icons.swap_vert,
     game: MuflisGame(),
   ),

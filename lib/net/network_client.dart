@@ -37,7 +37,7 @@ class NetworkClient extends TableController {
   void Function(String reason)? onClosed;
 
   @override
-  String get title => 'Teen Patti · LAN';
+  String get title => 'TashAdda · LAN';
 
   @override
   TableView get view => _view;

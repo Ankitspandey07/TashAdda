@@ -17,7 +17,7 @@ class RoomInfo {
     required this.hostIp,
     required this.tcpPort,
     this.gameTag = 'ranking',
-    this.gameTitle = 'Teen Patti',
+    this.gameTitle = 'TashAdda',
   });
 
   final String roomName;
@@ -42,7 +42,7 @@ class RoomInfo {
         hostIp: j['ip'] as String,
         tcpPort: j['port'] as int,
         gameTag: (j['game'] as String?) ?? 'ranking',
-        gameTitle: (j['title'] as String?) ?? 'Teen Patti',
+        gameTitle: (j['title'] as String?) ?? 'TashAdda',
       );
 
   Map<String, dynamic> toJson() => {
