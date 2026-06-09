@@ -1,0 +1,13 @@
+name: card_game_platform
+description: >-
+  Framework-agnostic core for a cross-platform multiplayer card game platform.
+  Phase 1: data models, dynamic deck scaling (52/104), and a modular game
+  interface with a Teen Patti hand evaluator that handles double-deck ties.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.0.0
+
+dev_dependencies:
+  test: ^1.24.0
