@@ -330,12 +330,14 @@ class _Felt extends StatelessWidget {
 
         // Scale seat size to the screen so nothing clips on small phones.
         final sw = (w * 0.22).clamp(74.0, 104.0);
-        final sh = sw * 1.34;
+        final cardW = (sw * 0.24).clamp(20.0, 28.0);
+        // Must match _SeatWidget layout (cards + avatar + name/chips).
+        final seatH = cardW * 1.5 + 36 + 28;
 
         // Keep the whole seat box inside the felt by insetting the radii by
         // half the seat size (plus a small margin).
         final rx = math.max(0.0, (w / 2) - (sw / 2) - 8);
-        final ry = math.max(0.0, (h / 2) - (sh / 2) - 8);
+        final ry = math.max(0.0, (h / 2) - (seatH / 2) - 8);
 
         // You sit at the bottom; opponents fan across the top, leaving the
         // top-centre clear for the dealer so nobody overlaps her.
@@ -347,12 +349,12 @@ class _Felt extends StatelessWidget {
           final y = cy + ry * math.sin(theta);
           seatWidgets.add(Positioned(
             left: x - sw / 2,
-            top: y - sh / 2,
+            top: y - seatH / 2,
             width: sw,
-            height: sh,
             child: _SeatWidget(
               seat: ordered[i],
               width: sw,
+              cardW: cardW,
               onSeeCards: onSeeCards,
             ),
           ));
@@ -515,10 +517,15 @@ class _BrandLogo extends StatelessWidget {
 }
 
 class _SeatWidget extends StatelessWidget {
-  const _SeatWidget(
-      {required this.seat, required this.width, required this.onSeeCards});
+  const _SeatWidget({
+    required this.seat,
+    required this.width,
+    required this.cardW,
+    required this.onSeeCards,
+  });
   final SeatView seat;
   final double width;
+  final double cardW;
   final VoidCallback onSeeCards;
 
   @override
@@ -566,13 +573,12 @@ class _SeatWidget extends StatelessWidget {
           ]
         : const <BoxShadow>[];
     final dim = seat.folded;
-    final cardW = (width * 0.26).clamp(22.0, 32.0);
 
     // Your own face-down cards: tap to peek (blind play).
     final canPeek = seat.isYou && !seat.seen && !seat.folded;
 
     Widget cards = SizedBox(
-      height: cardW * 1.7,
+      height: cardW * 1.5,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -593,64 +599,73 @@ class _SeatWidget extends StatelessWidget {
       cards = GestureDetector(onTap: onSeeCards, child: cards);
     }
 
+    final label = seat.isYou ? '${seat.name} (You)' : seat.name;
+
     return Opacity(
       opacity: dim ? 0.45 : 1.0,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          cards,
-          if (canPeek)
-            const Text('tap to see',
-                style: TextStyle(color: Color(0xFFFFD54F), fontSize: 8)),
+          Semantics(
+            button: canPeek,
+            label: canPeek ? 'Tap cards to see your hand' : null,
+            child: cards,
+          ),
           const SizedBox(height: 2),
           Container(
             decoration:
                 BoxDecoration(shape: BoxShape.circle, boxShadow: glow),
             child: seat.isYou
-                ? const ProfileAvatar(radius: 20)
+                ? const ProfileAvatar(radius: 16)
                 : _OpponentAvatar(name: seat.name, folded: seat.folded),
           ),
           const SizedBox(height: 2),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+            width: width,
+            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
             decoration: BoxDecoration(
               color: Colors.black.withValues(alpha: 0.55),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Column(
+              mainAxisSize: MainAxisSize.min,
               children: [
                 Row(
-                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Flexible(
                       child: Text(
-                        seat.isYou ? '${seat.name} (You)' : seat.name,
+                        label,
+                        maxLines: 1,
                         overflow: TextOverflow.ellipsis,
+                        textAlign: TextAlign.center,
                         style: const TextStyle(
                             color: Colors.white,
-                            fontSize: 11,
+                            fontSize: 10,
                             fontWeight: FontWeight.bold),
                       ),
                     ),
                     if (!seat.folded) ...[
-                      const SizedBox(width: 3),
+                      const SizedBox(width: 2),
                       Icon(
                           seat.seen
                               ? Icons.visibility
                               : Icons.visibility_off,
-                          size: 11,
+                          size: 10,
                           color: Colors.white54),
                     ],
                   ],
                 ),
                 Text('${seat.chips}',
                     style: const TextStyle(
-                        color: Color(0xFFFFD54F), fontSize: 11)),
+                        color: Color(0xFFFFD54F), fontSize: 10)),
                 if (seat.status.isNotEmpty)
                   Text(seat.status,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       textAlign: TextAlign.center,
                       style: const TextStyle(
-                          color: Colors.amberAccent, fontSize: 9)),
+                          color: Colors.amberAccent, fontSize: 8)),
               ],
             ),
           ),
@@ -674,7 +689,7 @@ class _OpponentAvatar extends StatelessWidget {
       builder: (context, map, _) {
         final bytes = map[name];
         return CircleAvatar(
-          radius: 20,
+          radius: 16,
           backgroundColor: const Color(0xFF2E3A59),
           backgroundImage: bytes != null ? MemoryImage(bytes) : null,
           child: bytes != null
@@ -682,7 +697,7 @@ class _OpponentAvatar extends StatelessWidget {
               : Icon(
                   folded ? Icons.do_not_disturb : Icons.person,
                   color: Colors.white,
-                  size: 20,
+                  size: 16,
                 ),
         );
       },

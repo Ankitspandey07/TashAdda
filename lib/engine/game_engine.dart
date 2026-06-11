@@ -72,7 +72,7 @@ class GameEngine extends ChangeNotifier {
     this.maxStake = 320,
     Random? random,
   })  : game = game ?? const TeenPattiGame(),
-        _rng = random ?? Random() {
+        _rng = random ?? Random.secure() {
     if (boot <= 0 || startChips <= 0) {
       throw ArgumentError('boot and startChips must be positive');
     }

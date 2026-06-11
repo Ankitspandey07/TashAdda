@@ -1,14 +1,17 @@
+import 'package:flutter/foundation.dart' show defaultTargetPlatform, TargetPlatform;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'ads/ads_init.dart';
 import 'ads/rewarded_ads.dart';
+import 'net/dev_http.dart';
 import 'profile/profile_store.dart';
 import 'ui/app_background.dart';
 import 'ui/main_menu_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  installDevHttpOverrides();
   // Classic full-width layout — avoids MIUI side inset strips from edge-to-edge.
   SystemChrome.setEnabledSystemUIMode(
     SystemUiMode.manual,
@@ -23,11 +26,13 @@ Future<void> main() async {
     ),
   );
   await ProfileStore.load();
-  try {
-    await AdsInit.ensureInitialized();
-    RewardedAds.load();
-  } catch (_) {
-    // Ads unavailable — app must still run (bad App ID, no Play Services, etc.).
+  if (defaultTargetPlatform == TargetPlatform.android) {
+    try {
+      await AdsInit.ensureInitialized();
+      RewardedAds.load();
+    } catch (_) {
+      // Ads unavailable — app must still run.
+    }
   }
   runApp(const TeenPattiApp());
 }

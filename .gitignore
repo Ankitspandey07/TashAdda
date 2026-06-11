@@ -53,3 +53,7 @@ android/key.properties
 *.jks
 *.keystore
 android/KEYSTORE_CREDENTIALS.local.txt
+
+# iOS build artifacts — keep only versioned IPAs in releases/
+releases/ios/Runner-unsigned.app/
+releases/ios/**/*.app/

@@ -59,7 +59,7 @@ class PollingHost extends ChangeNotifier {
       roomCode = await relay.create();
       status = 'Room ready · share the code';
     } catch (e) {
-      status = 'Server error: $e';
+      status = e is Exception ? e.toString().replaceFirst('Exception: ', '') : 'Server error: $e';
       notifyListeners();
       return;
     }

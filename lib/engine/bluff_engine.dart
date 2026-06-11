@@ -65,7 +65,8 @@ class BluffClaim {
 /// if it was true the caller takes the pile. First player to empty their hand
 /// (and survive the call window) wins.
 class BluffEngine extends ChangeNotifier {
-  BluffEngine({Random? random, this.callTimeout}) : _rng = random ?? Random();
+  BluffEngine({Random? random, this.callTimeout})
+      : _rng = random ?? Random.secure();
 
   final Random _rng;
 

@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/foundation.dart' show defaultTargetPlatform, TargetPlatform;
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import 'ad_config.dart';
@@ -13,6 +14,7 @@ class RewardedAds {
   static bool _loading = false;
 
   static Future<void> load() async {
+    if (defaultTargetPlatform != TargetPlatform.android) return;
     if (_loading || _ad != null) return;
     _loading = true;
     try {

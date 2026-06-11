@@ -1,29 +1,47 @@
 # TashAdda releases
 
-Versioned Android APKs for TashAdda. Download the latest from [GitHub Releases](https://github.com/Ankitspandey07/TashAdda/releases) or directly from this folder.
+Versioned builds for Android and iOS. Download from [GitHub Releases](https://github.com/Ankitspandey07/TashAdda/releases) or directly from this folder.
 
 ## Version history
 
-| Version | Date | APK | Notes |
-|---------|------|-----|-------|
-| **1.0.0** | 2026-06-09 | [TashAdda-v1.0.0.apk](TashAdda-v1.0.0.apk) | Signed release build — vs bots, LAN, online, chip limits, Bluff, AdMob. Amazon Appstore ready. |
+| Version | Date | Android | iOS | Notes |
+|---------|------|---------|-----|-------|
+| **1.0.1** | 2026-06-10 | [TashAdda-v1.0.1.apk](TashAdda-v1.0.1.apk) | [TashAdda-v1.0.1-ios.ipa](TashAdda-v1.0.1-ios.ipa) | Seat layout fix, iOS white-screen fix, online SSL hints, fair shuffle (`Random.secure`). |
+| **1.0.0** | 2026-06-09 | [TashAdda-v1.0.0.apk](TashAdda-v1.0.0.apk) | — | First signed Android release — vs bots, LAN, online, Bluff, AdMob. |
 
-`TashAdda.apk` in this folder always matches the **latest** published version (currently v1.0.0).
+`TashAdda.apk` and `TashAdda-ios.ipa` always match the **latest** published version.
 
-## Install
+## Android install
 
 ```bash
-adb install -r TashAdda-v1.0.0.apk
+adb install -r TashAdda-v1.0.1.apk
 ```
 
 Enable **Install via USB** on Xiaomi/MIUI if install is blocked.
 
+## iOS install
+
+iPhone cannot install `.ipa` like a normal download. See **[store/IOS_INSTALL.md](../store/IOS_INSTALL.md)** for:
+
+- **Sideloadly** (recommended)
+- **AltStore / SideStore**
+- **Diawi** (shareable link)
+- **TrollStore** (supported iOS versions)
+- **OTA website** (manifest.plist + HTTPS)
+
+Quick path: download the IPA → install with [Sideloadly](https://sideloadly.io) using your free Apple ID → trust profile in Settings.
+
 ## Publish next version
 
-1. Build release APK (see root [README.md](../README.md)).
-2. Add `TashAdda-vX.Y.Z.apk` here and refresh the table above.
-3. Overwrite `TashAdda.apk` with the new build.
-4. Tag and upload:
+1. Bump `version` in `pubspec.yaml`.
+2. Build Android: `flutter build apk --release`
+3. Build iOS: `./scripts/sign_and_build_ios_ipa.sh`
+4. Copy artifacts here and update the table above.
+5. Commit, push, and create a GitHub Release:
    ```bash
-   gh release create vX.Y.Z TashAdda-vX.Y.Z.apk --title "TashAdda vX.Y.Z" --notes "..."
+   gh release create vX.Y.Z \
+     releases/TashAdda-vX.Y.Z.apk \
+     releases/TashAdda-vX.Y.Z-ios.ipa \
+     --title "TashAdda vX.Y.Z" \
+     --notes "Release notes."
    ```

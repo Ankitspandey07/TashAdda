@@ -1,51 +1,148 @@
 ================================================================================
-TASHADDA — AMAZON APPSTORE LISTING COPY
-Paste into Amazon Developer Console. Edit as you like before submit.
+TASHADDA — APP STORE LISTING COPY
+Use for Amazon Appstore, website, or README. Edit before submit if needed.
 ================================================================================
 
-SHORT DESCRIPTION (one sentence, ~200 chars max)
+SHORT DESCRIPTION (one sentence, ~200 characters)
 --------------------------------------------------------------------------------
 Play card games at a private table with friends — same Wi‑Fi, room code, or bots. No strangers, no public matchmaking.
 
 
-LONG DESCRIPTION
+TAGLINE (optional subtitle)
 --------------------------------------------------------------------------------
-TashAdda is a private card table for you and your friends — not a casino with random opponents.
+Your table. Your friends. Your rules.
 
-Host a room, share a code, or sit on the same Wi‑Fi. Only people you invite join your table. There is no public lobby and no matchmaking with strangers.
 
-HOW YOU PLAY
-
-• Play vs Bots — practice on one phone with 2–4 bots at your chosen boot and chip limit.
-
-• Play Online — create a room, get a 6-letter code, share it on WhatsApp or SMS, and friends join from anywhere.
-
-• Local Room — same Wi‑Fi or mobile hotspot; the host broadcasts the table and friends tap Join.
-
-• Bluff (Cheat) — call bluffs, play cards face-down, and win when opponents catch you or you empty your hand.
-
-GAMES
-
-Classic 3-card, Muflis (lowball), and Bluff are fully playable. More variants coming soon.
-
-TASHADDA TABLE RULES
-
-Fair house rules built in: starting chips reset each round, boot ante, blind and seen chaals, sideshow, show or pack when you are short on chips, and a session scoreboard when you leave.
-
-FEATURES
-
-• Private rooms only — friends you invite
-• Chat and emoji at the table
-• Profile photo on your seat
-• Session won/lost summary
-• Clear in-app rules sheet
-• Works on phone and tablet layouts
-
-TashAdda is meant for friendly home games with people you know. Download, invite your group, and deal.
-
-================================================================================
-KEYWORDS (if Amazon asks — comma separated)
+LONG DESCRIPTION — FULL FEATURE LIST
 --------------------------------------------------------------------------------
-card game, friends, private room, multiplayer, LAN, wifi, bluff, muflis, indian cards, home game, party game
+TashAdda is a private multiplayer card table built for playing with people you know — friends, family, and your usual home-game group. It is not a casino app and there is no public matchmaking. You never sit with random strangers. You host a room, share a code or join on the same Wi‑Fi, and only the people you invite play at your table.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+WHY TASHADDA IS DIFFERENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Unlike most card apps that drop you into lobbies with unknown players, TashAdda works like a real home game:
+
+  • Private rooms only — you control who joins
+  • No public matchmaking or stranger tables
+  • Host sets boot (ante) and chip limit for everyone in the room
+  • Play on one phone, over the internet, or on the same Wi‑Fi/hotspot
+  • Optional bots fill empty seats when you need a third player
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+THREE WAYS TO PLAY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+▸ PLAY VS BOTS (solo on one device)
+  Practice or play alone on a single phone. Pick your game, set starting chips
+  and boot, choose 2–4 bots, and deal. Perfect for learning rules or when
+  no one else is free.
+
+▸ PLAY ONLINE (anywhere — room code)
+  Host creates a room and gets a 6-letter code. Share it on WhatsApp, SMS, or
+  any chat app. Friends enter the code and join from anywhere. No IP addresses,
+  no complicated setup — just your private table on the internet.
+
+▸ LOCAL ROOM (same Wi‑Fi or mobile hotspot)
+  Host broadcasts a table on the local network. Friends open Search Local Rooms
+  and tap Join. Great for house parties, travel, or when everyone is in the
+  same room on one hotspot.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GAMES INCLUDED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+▸ CLASSIC (3-card)
+  The familiar Indian 3-card game. Trail (three of a kind) beats everything.
+  Runs blind and seen chaals, sideshow, show, and full TashAdda house rules.
+
+▸ MUFLIS (lowball)
+  Same table and betting flow, but the weakest hand wins. A fun twist when
+  your group wants something different.
+
+▸ BLUFF (CHEAT)
+  A separate fast-paced game: play cards face-down, claim ranks, call bluffs,
+  and empty your hand to win. Supports the same online and LAN multiplayer
+  as the card-table games.
+
+▸ COMING SOON
+  Poker, Rummy, and more variants are on the roadmap.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TASHADDA TABLE RULES (BUILT IN)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Fair, consistent house rules so every round plays the same:
+
+  • Starting chips reset each round (host picks limit, e.g. 200 or 1000)
+  • Boot (ante) posted by every player at the start of each round
+  • Blind phase: up to 8 chaals while cards may stay hidden
+  • Seen players pay double during the blind phase
+  • After 8 chaals, all active players see their cards automatically
+  • Equal betting after auto-show — no more seen double
+  • Maximum 25 chaals per round, then forced showdown
+  • Sideshow: challenge a seen opponent — they accept or reject (5 second
+    timeout) — weaker hand packs
+  • Show: when two players remain, pay and compare hands — winner takes pot
+  • Broke? If you cannot afford the next chaal, Show or Pack
+  • Zero chips = packed; last player standing wins
+
+Full rules are always one tap away in the app (TashAdda rules sheet).
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TABLE & SOCIAL FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  • In-table text chat and quick emoji
+  • Profile name and photo on your seat (camera or gallery)
+  • Session scoreboard — track won/lost across rounds when you leave a room
+  • Host can close the room; players see a session summary on exit
+  • Sideshow reveal overlay — see both hands when a challenge happens
+  • Exit confirmation so you do not leave by accident
+  • Table sounds for deal, bet, raise, fold, win, and chat
+  • Responsive layout for phones and tablets
+  • Support button for feedback (email / UPI tip optional)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FOR HOSTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+When you create a local or online room, you choose:
+
+  • Boot (ante) amount
+  • Starting chips per round (the limit for every player)
+
+Everyone who joins follows the same settings. Empty seats can be filled with
+bots (minimum 3 players) so a host + one friend can still start a game.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PERFECT FOR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  • Weekend home games with friends
+  • College hostels on one Wi‑Fi
+  • Family groups spread across cities (online room code)
+  • Learning the game solo vs bots
+  • Party nights — private table, no outsiders
+
+
+Download TashAdda, invite your group, set your boot and chips, and deal.
+
+
+PROMO DESCRIPTION (medium length, ~500 chars — some stores)
+--------------------------------------------------------------------------------
+TashAdda is your private card table for friends — not strangers. Host online with a 6-letter room code, play on the same Wi‑Fi, or practice vs bots. Classic 3-card, Muflis lowball, and Bluff included. Built-in TashAdda rules: blind/seen chaals, sideshow, show or pack, session scoreboard, chat, and profile photos. You pick boot and chip limits; only people you invite join. No public matchmaking. Deal with your crew.
+
+
+KEYWORDS (comma separated, if the store asks)
+--------------------------------------------------------------------------------
+card game, friends, private room, multiplayer, LAN, wifi, hotspot, bluff, muflis, indian cards, home game, party game, 3 card, room code, local multiplayer, family game
 
 ================================================================================
