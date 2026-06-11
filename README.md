@@ -33,6 +33,8 @@ Apple does **not** install `.ipa` files directly from a link like Android. Use o
 
 Full step-by-step guide: **[store/IOS_INSTALL.md](store/IOS_INSTALL.md)**
 
+**Free “download page” (like a mini store):** enable [GitHub Pages](https://ankitspandey07.github.io/TashAdda/) — see **[store/IOS_FREE_HOSTING.md](store/IOS_FREE_HOSTING.md)**.
+
 > Free Apple ID builds expire after **~7 days** — reinstall or use AltStore. For the easiest friend experience, share the **Android APK** link.
 
 ## How to play
@@ -128,6 +130,7 @@ The `card_game_platform` package lives in `packages/card_game_platform` (no extr
 
 | Guide | Contents |
 |-------|----------|
+| [store/IOS_FREE_HOSTING.md](store/IOS_FREE_HOSTING.md) | Free iOS hosting vs Android stores, GitHub Pages, Diawi |
 | [store/IOS_INSTALL.md](store/IOS_INSTALL.md) | Sideloadly, AltStore, Diawi, TrollStore, OTA website |
 | [store/IOS_BUILD.md](store/IOS_BUILD.md) | Build IPA on Mac |
 | [store/ZERO_BUDGET.md](store/ZERO_BUDGET.md) | ₹0 distribution plan |

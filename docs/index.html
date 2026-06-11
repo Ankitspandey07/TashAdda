@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TashAdda — Download</title>
+  <meta name="description" content="Play card games with friends. Download TashAdda for Android or iOS.">
+  <style>
+    :root {
+      --bg: #0b142e;
+      --card: #152040;
+      --gold: #ffd54f;
+      --green: #2e7d32;
+      --purple: #6a1b9a;
+      --text: #e8eaf6;
+      --muted: #9aa5c4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .wrap { max-width: 520px; margin: 0 auto; padding: 24px 16px 48px; }
+    .logo { width: 88px; height: 88px; border-radius: 18px; border: 2px solid #c62828; }
+    h1 { margin: 12px 0 4px; font-size: 1.75rem; }
+    .tag { color: var(--muted); margin-bottom: 24px; }
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 14px;
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .card h2 { margin: 0 0 8px; font-size: 1.05rem; }
+    .card p { margin: 0 0 12px; color: var(--muted); font-size: .92rem; }
+    a.btn {
+      display: block;
+      text-align: center;
+      padding: 14px;
+      border-radius: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .android { background: var(--green); }
+    .ios { background: var(--purple); }
+    .ghost {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,.2);
+      color: var(--text);
+    }
+    ol { padding-left: 20px; color: var(--muted); font-size: .9rem; }
+    ol li { margin-bottom: 6px; }
+    .warn {
+      background: rgba(255, 213, 79, .12);
+      border: 1px solid rgba(255, 213, 79, .35);
+      border-radius: 10px;
+      padding: 12px;
+      font-size: .88rem;
+      color: var(--gold);
+      margin-top: 16px;
+    }
+    footer { text-align: center; color: var(--muted); font-size: .8rem; margin-top: 28px; }
+    footer a { color: var(--gold); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <img class="logo" src="https://raw.githubusercontent.com/Ankitspandey07/TashAdda/main/store/icon-512.png" alt="TashAdda">
+    <h1>TashAdda</h1>
+    <p class="tag">Card games · play with friends only</p>
+
+    <div class="card">
+      <h2>Android — tap to install</h2>
+      <p>Download the APK, open it, allow install from browser/files.</p>
+      <a class="btn android" href="https://github.com/Ankitspandey07/TashAdda/releases/download/v1.0.1/TashAdda-v1.0.1.apk">
+        Download Android (v1.0.1)
+      </a>
+      <a class="btn ghost" href="https://github.com/Ankitspandey07/TashAdda/releases/latest">
+        All releases on GitHub
+      </a>
+    </div>
+
+    <div class="card">
+      <h2>iPhone / iPad — sideload required</h2>
+      <p>Apple does not allow one-tap install like Android. Use the steps below (free Apple ID).</p>
+      <a class="btn ios" href="https://github.com/Ankitspandey07/TashAdda/releases/download/v1.0.1/TashAdda-v1.0.1-ios.ipa">
+        Download iOS IPA (v1.0.1)
+      </a>
+      <ol>
+        <li>On a Mac/PC install <a href="https://sideloadly.io">Sideloadly</a>.</li>
+        <li>Connect iPhone with USB.</li>
+        <li>Drag the IPA into Sideloadly → enter your Apple ID.</li>
+        <li>On iPhone: <strong>Settings → General → VPN & Device Management</strong> → trust.</li>
+      </ol>
+      <p style="font-size:.85rem;color:var(--muted)">
+        Or use <a href="https://altstore.io" style="color:var(--gold)">AltStore</a> to auto-refresh before the 7-day cert expires.
+        <a href="https://github.com/Ankitspandey07/TashAdda/blob/main/store/IOS_INSTALL.md" style="color:var(--gold)">Full iOS guide</a>
+      </p>
+    </div>
+
+    <div class="warn">
+      Free iOS installs expire after ~7 days. Reinstall or use AltStore refresh. For the easiest experience, Android friends should use the APK button above.
+    </div>
+
+    <footer>
+      <a href="https://github.com/Ankitspandey07/TashAdda">Source on GitHub</a>
+      · Private rooms · No strangers
+    </footer>
+  </div>
+</body>
+</html>
