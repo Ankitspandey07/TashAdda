@@ -1,6 +1,12 @@
 # TashAdda releases
 
-Versioned builds for Android and iOS. Download from [GitHub Releases](https://github.com/Ankitspandey07/TashAdda/releases) or directly from this folder.
+Versioned builds for Android and iOS. Download from [GitHub Releases](https://github.com/Ankitspandey07/TashAdda/releases), this folder, or:
+
+| Host | Link |
+|------|------|
+| **itch.io** | https://ankitspandey07.itch.io/tashadda |
+| **AppHost** | https://appho.st/my/dashboard (iOS hosting) |
+| **GitHub Pages** | https://ankitspandey07.github.io/TashAdda/ |
 
 ## Version history
 

@@ -11,6 +11,17 @@ TashAdda is a private table app. You host a room, share a code or join on the sa
 | **Android** | 1.0.1 (latest) | [releases/TashAdda-v1.0.1.apk](releases/TashAdda-v1.0.1.apk) | [Releases](https://github.com/Ankitspandey07/TashAdda/releases) |
 | **iOS** | 1.0.1 (latest) | [releases/TashAdda-v1.0.1-ios.ipa](releases/TashAdda-v1.0.1-ios.ipa) | [Releases](https://github.com/Ankitspandey07/TashAdda/releases) |
 
+### Also hosted on
+
+| Host | Link | Notes |
+|------|------|-------|
+| **itch.io** | [ankitspandey07.itch.io/tashadda](https://ankitspandey07.itch.io/tashadda) | Game page + Android APK & iOS IPA downloads |
+| **AppHost** | [appho.st dashboard](https://appho.st/my/dashboard) | iOS app hosting ([AppHost](https://appho.st/)) |
+| **GitHub Pages** | [ankitspandey07.github.io/TashAdda](https://ankitspandey07.github.io/TashAdda/) | Install page (APK + IPA links) |
+| **Amazon Appstore** | See [store/AMAZON_APPSTORE.md](store/AMAZON_APPSTORE.md) | Android store listing (in progress) |
+
+Friends can download from **itch.io** or **GitHub Releases** — same v1.0.1 builds.
+
 ### Android
 
 ```bash
@@ -33,7 +44,7 @@ Apple does **not** install `.ipa` files directly from a link like Android. Use o
 
 Full step-by-step guide: **[store/IOS_INSTALL.md](store/IOS_INSTALL.md)**
 
-**Free “download page” (like a mini store):** enable [GitHub Pages](https://ankitspandey07.github.io/TashAdda/) — see **[store/IOS_FREE_HOSTING.md](store/IOS_FREE_HOSTING.md)**.
+**Free install page:** [GitHub Pages](https://ankitspandey07.github.io/TashAdda/) · **[itch.io](https://ankitspandey07.itch.io/tashadda)** · see **[store/IOS_FREE_HOSTING.md](store/IOS_FREE_HOSTING.md)**.
 
 > Free Apple ID builds expire after **~7 days** — reinstall or use AltStore. For the easiest friend experience, share the **Android APK** link.
 

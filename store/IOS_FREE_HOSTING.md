@@ -20,14 +20,20 @@ Below is what you can do at **₹0**, ranked by how close it feels to “hosted 
 
 ---
 
-## Option 1 — GitHub Pages (recommended, ₹0)
+## Option 1 — GitHub Pages + itch.io (recommended, ₹0)
 
-A simple public URL you share like a mini “download site.”
+Public URLs you can share like mini download sites:
 
-**Your URL (after enabling Pages):**  
-https://ankitspandey07.github.io/TashAdda/
+| Host | URL |
+|------|-----|
+| **GitHub Pages** | https://ankitspandey07.github.io/TashAdda/ |
+| **itch.io** | https://ankitspandey07.itch.io/tashadda |
 
-**Enable once:**
+**itch.io** also hosts the APK and IPA with a game description — good for friends who want one link for both platforms.
+
+**AppHost** ([dashboard](https://appho.st/my/dashboard)) — additional iOS enterprise hosting on [appho.st](https://appho.st/).
+
+**Enable GitHub Pages (once, if not already on):**
 
 1. GitHub repo → **Settings → Pages**
 2. **Build and deployment → Source:** Deploy from branch
@@ -91,8 +97,8 @@ Skip until you have budget.
 
 | Audience | Share this |
 |----------|------------|
-| **Android friends** | GitHub Release APK or Amazon listing |
-| **iPhone friends** | https://ankitspandey07.github.io/TashAdda/ + Sideloadly steps |
+| **Android friends** | [itch.io](https://ankitspandey07.itch.io/tashadda) or GitHub Release APK |
+| **iPhone friends** | [itch.io IPA](https://ankitspandey07.itch.io/tashadda) + Sideloadly, or AppHost |
 | **You (developer)** | AltStore or USB + Xcode |
 
 ---
